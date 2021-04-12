@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.about {
+  background-image: url("../img/bg-about.png");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-size: cover;
+  position: relative;
+}
+
+.about__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.about__photo {
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.hobbies {
+  padding: 100px 0;
+  text-align: center;
+  background: #b4352c;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.hobbies__title {
+  font-size: 45px;
+  margin-bottom: 50px;
+  font-family: "Pacifico", cursive;
+}
+
+.hobbies__wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #07131e;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer p a {
+  color: #f16a6a;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 20px;
+}
+
+footer ul li {
+  overflow: hidden;
+  border-radius: 50%;
+
+  width: 35px;
+  height: 35px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__info {
+  font-size: 10px;
+}
+
+button {
+  box-shadow: 0px 10px 14px -7px #732727;
+  background: linear-gradient(to bottom, #ad4f4f 5%, #994040 100%);
+  background-color: #ad4f4f;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8a3e3e;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 0;
+}
+button:hover {
+  background: linear-gradient(to bottom, #994040 5%, #ad4f4f 100%);
+  background-color: #994040;
+}
+
+.dark-mode {
+  background-image: url(../img/bg-about-2.png);
+  color: white;
+}
