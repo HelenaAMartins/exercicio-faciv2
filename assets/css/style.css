@@ -51,7 +51,7 @@ figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   background-size: cover;
   position: relative;
 }
@@ -62,20 +62,64 @@ figure {
   align-items: center;
   max-width: 600px;
   text-align: center;
-  font-size: 20px;
+}
+
+.about__wrap p {
+  font-size: 14px;
+  padding: 15px;
 }
 
 .about__photo {
   overflow: hidden;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: contain;
 }
 
-img {
+@media (min-width: 768px) {
+  .about__photo {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about__wrap p {
+    font-size: 20px;
+  }
+}
+
+.about__photo img {
   height: 100%;
   width: 100%;
+}
+
+.about button {
+  box-shadow: 0px 10px 14px -7px #732727;
+  background: linear-gradient(to bottom, #ad4f4f 5%, #994040 100%);
+  background-color: #ad4f4f;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #8a3e3e;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: 0;
+}
+.about button:hover {
+  background: linear-gradient(to bottom, #994040 5%, #ad4f4f 100%);
+  background-color: #994040;
+}
+
+.dark-mode {
+  background-image: url(../img/bg-about-2.png);
+  color: white;
 }
 
 .hobbies {
@@ -92,10 +136,26 @@ img {
   font-family: "Pacifico", cursive;
 }
 
-.hobbies__wrap {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+@media (min-width: 400px) {
+  .hobbies__wrap {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .hobbies__wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.hobbies__card {
+  margin-bottom: 30px;
+}
+
+.hobbies__card img {
+  width: 100%;
 }
 
 footer {
@@ -137,33 +197,4 @@ footer ul li svg {
 
 .footer__info {
   font-size: 10px;
-}
-
-button {
-  box-shadow: 0px 10px 14px -7px #732727;
-  background: linear-gradient(to bottom, #ad4f4f 5%, #994040 100%);
-  background-color: #ad4f4f;
-  border-radius: 8px;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: Poppins;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 8px 20px;
-  text-decoration: none;
-  text-shadow: 0px 1px 0px #8a3e3e;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border: 0;
-}
-button:hover {
-  background: linear-gradient(to bottom, #994040 5%, #ad4f4f 100%);
-  background-color: #994040;
-}
-
-.dark-mode {
-  background-image: url(../img/bg-about-2.png);
-  color: white;
 }
